@@ -8,14 +8,14 @@ const NewsList = () => {
   const [news, setNews] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState(null);
-
+  
   useEffect(() => {
     const fetchIndiaNews = async () => {
       try {
         const response = await axios.get(
           'https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR_API_KEY'
         );
-        setNews(response.data.articles.slice(5, 25)); // Limiting to max 20 news articles starting from index 5
+        setNews(response.data.articles.slice(5, 25)); //change limit from here
       } catch (error) {
         console.error('Error fetching India news:', error);
       }
