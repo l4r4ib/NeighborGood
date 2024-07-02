@@ -13,7 +13,7 @@ const NewsList = () => {
     const fetchIndiaNews = async () => {
       try {
         const response = await axios.get(
-          'https://newsapi.org/v2/top-headlines?country=in&apiKey=1df2fef6d8ef48d59d62d20331a20373'
+          'https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR_API_KEY'
         );
         setNews(response.data.articles.slice(5, 25)); // Limiting to max 20 news articles starting from index 5
       } catch (error) {
