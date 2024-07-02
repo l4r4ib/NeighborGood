@@ -1,4 +1,3 @@
-// src/components/TrendingNews/TrendingNews.Component.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -21,7 +20,6 @@ const TrendingNews = () => {
 
   return (
     <div className="flex justify-center gap-4">
-      {/* Main News Card (50% width) */}
       {news.length > 0 && (
         <div className="card bg-white shadow-md rounded-lg p-4 mb-4" style={{ width: '50%' }}>
           <img
@@ -34,7 +32,6 @@ const TrendingNews = () => {
         </div>
       )}
 
-      {/* Small News Cards (25% width each) */}
       <div className="flex flex-col gap-4" style={{ width: '50%' }}>
         {news.slice(1, 4).map((article, index) => (
           <div key={index} className="card bg-white shadow-md rounded-lg p-4 mb-4" style={{ width: '100%' }}>
