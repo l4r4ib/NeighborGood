@@ -7,7 +7,7 @@ const ExchangeRateTracker = () => {
   const [dateTime, setDateTime] = useState('');
   const [usdToInrRate, setUsdToInrRate] = useState('');
   const [euroToInrRate, setEuroToInrRate] = useState('');
-  const apiKey = 'ec6db54bd63c3af60c4cbb42';
+  const apiKey = 'YOUR_API_KEY';
 
   useEffect(() => {
     // Fetch current date and time
