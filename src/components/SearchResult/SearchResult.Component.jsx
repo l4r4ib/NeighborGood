@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ChevronLeftIcon } from '@heroicons/react/24/solid'; // Correct import for Heroicons v2
+import { ChevronLeftIcon } from '@heroicons/react/24/solid'; 
 
 const SearchResults = ({ searchTerm, onBack }) => {
   const [searchResults, setSearchResults] = useState([]);
-  const apiKey = '1df2fef6d8ef48d59d62d20331a20373'; // Replace with your actual NewsAPI key
+  const apiKey = 'YOUR_API_KEY'; 
 
   useEffect(() => {
     const fetchSearchResults = async () => {
