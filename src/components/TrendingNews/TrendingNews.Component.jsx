@@ -9,7 +9,7 @@ const TrendingNews = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`);
-        setNews(response.data.articles.slice(0, 4)); // Limiting to 4 articles
+        setNews(response.data.articles.slice(0, 4)); 
       } catch (error) {
         console.error('Error fetching trending news:', error);
       }
