@@ -6,7 +6,7 @@ const Searchbar = ({ onSubmit }) => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    onSubmit(searchTerm); // Pass the searchTerm to the onSubmit function from props
+    onSubmit(searchTerm); 
   };
 
   return (
