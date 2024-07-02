@@ -1,10 +1,9 @@
-// src/components/Weather/WeatherAPI.Component.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const WeatherAPI = () => {
   const [weatherData, setWeatherData] = useState(null);
-  const weatherApiKey = 'd8632d18706f47a0a0c81610221107';
+  const weatherApiKey = 'YOUR_API_KEY';
 
 
   useEffect(() => {
