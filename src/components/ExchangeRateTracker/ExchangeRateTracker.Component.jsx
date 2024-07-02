@@ -1,4 +1,3 @@
-// src/components/ExchangeRateTracker/ExchangeRateTracker.Component.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import WeatherAPI from '../Weather/WeatherAPI.Component';
@@ -10,12 +9,10 @@ const ExchangeRateTracker = () => {
   const apiKey = 'YOUR_API_KEY';
 
   useEffect(() => {
-    // Fetch current date and time
     const currentDate = new Date().toLocaleDateString();
     const currentTime = new Date().toLocaleTimeString();
     setDateTime(`${currentDate} ${currentTime}`);
-
-    // Fetch USD to INR exchange rate
+    
     const fetchUsdToInrRate = async () => {
       try {
         const response = await axios.get(`https://v6.exchangerate-api.com/v6/${apiKey}/pair/USD/INR`);
@@ -25,7 +22,6 @@ const ExchangeRateTracker = () => {
       }
     };
 
-    // Fetch Euro to INR exchange rate
     const fetchEuroToInrRate = async () => {
       try {
         const response = await axios.get(`https://v6.exchangerate-api.com/v6/${apiKey}/pair/EUR/INR`);
